@@ -1,0 +1,44 @@
+:root {
+    color: white;
+    background: #181818;
+    --phi: 1.618em;
+}
+
+body {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Roboto';
+    margin: var(--phi) 0 0;
+    font-size: 96px;
+    font-weight: 300;
+    letter-spacing: -1.5px;
+}
+
+p {
+    font-family: 'Roboto Serif';
+    letter-spacing: 0.5px;
+    line-height: var(--phi);
+}
+
+em {
+    color: #999;
+    font-family: 'Roboto Serif';
+    font-size: 12px;
+    letter-spacing: 0.4px;
+}
+
+.container {
+    width: 700px;
+}
+
+@media screen and (max-width: 1200px) {
+    :root {
+        color: red;
+    }
+    body {
+        margin: 0 calc(var(--phi) * 1.618);
+    }
+}
